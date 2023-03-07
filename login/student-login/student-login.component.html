@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+
+<form [formGroup] = 'RegistrationForm'>
+  <div id="login-box">
+    <h1>Log In</h1>
+
+    <div><button class="google-sign-in">Log in with Google</button></div><br>
+
+    <div class="or">OR</div><br>
+    
+    <input type="text" name="email" formControlName="userName" placeholder="E-mail" />
+    <input type="password" name="password" formControlName="password" placeholder="Password" />
+    <br><br>
+    
+    <a href="/login/reset-password">Forgot Password?</a><br><br>
+
+    <button class="btn btn-primary" (click)="onSubmit()">Log In</button>
+  </div>
+</form>
